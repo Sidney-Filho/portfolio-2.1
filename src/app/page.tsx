@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -7,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
+import { Icons } from "@/components/icons";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -163,10 +163,81 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                Want to chat? Just shoot me a dm and I&apos;ll respond whenever I can.
               </p>
+              
+              {/* Cards FORA do <p> */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
+                {/* WhatsApp Card */}
+                <Link
+                  href={`https://wa.link/89rbwe`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative overflow-hidden rounded-lg border bg-background p-6 hover:bg-green-500/5 transition-all hover:border-green-500/50"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition-colors">
+                      <Icons.whatsapp className="size-6 text-green-600" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">WhatsApp</p>
+                      <p className="text-sm text-muted-foreground">+351 922 007 309</p>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Email Card */}
+                <Link
+                  href={`mailto:${DATA.contact.email}`}
+                  className="group relative overflow-hidden rounded-lg border bg-background p-6 hover:bg-blue-500/5 transition-all hover:border-blue-500/50"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                      <Icons.email className="size-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">Email</p>
+                      <p className="text-sm text-muted-foreground">{DATA.contact.email}</p>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* LinkedIn Card */}
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative overflow-hidden rounded-lg border bg-background p-6 hover:bg-blue-600/5 transition-all hover:border-blue-600/50"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-blue-600/10 group-hover:bg-blue-600/20 transition-colors">
+                      <Icons.linkedin className="size-6 text-blue-700" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">LinkedIn</p>
+                      <p className="text-sm text-muted-foreground">Connect with me</p>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* GitHub Card */}
+                <Link
+                  href={DATA.contact.social.GitHub.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative overflow-hidden rounded-lg border bg-background p-6 hover:bg-purple-500/5 transition-all hover:border-purple-500/50"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-purple-500/10 group-hover:bg-purple-500/20 transition-colors">
+                      <Icons.github className="size-6 text-purple-600" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">GitHub</p>
+                      <p className="text-sm text-muted-foreground">View my projects</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             </div>
           </BlurFade>
         </div>

@@ -31,7 +31,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
   contact: {
-    email: "hello@example.com",
+    email: "sidinhocostafilho@gmail.com",
     tel: "+351 922 007 309",
     social: {
       GitHub: {
@@ -48,13 +48,19 @@ export const DATA = {
 
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:sidinhocostafilho@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
+      Resume: {
+        name: "Resume",
+        url: "/SidneyCostaFilho_CV.pdf",
+        icon: NotebookIcon,
+        navbar: true,
+      }
     },
   },
 
@@ -84,12 +90,38 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "React E-commerce",
-      href: "https://e-commerce-react-1.vercel.app/",
-      dates: "Nov 2024 - Dez 2024",
+      title: "Gado AI",
+      href: "https://github.com/Sidney-Filho/GadoAI",
+      dates: "Fev 2025 - Mar 2025",
       active: true,
       description:
+        "GadoAI - AI-Powered Cattle Data Query System Intelligent chatbot that processes vectorized cattle insemination Excel data and answers questions through natural language. Built with FastAPI and LangChain, data-grounded responses about breeding records and herd analytics.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Python (FastAPI)",
+        "LangChain",
+        "Vector Embeddings",
+      ],
+      links: [
+        {
+          type: "Repository",
+          href: "https://github.com/Sidney-Filho/GadoAI",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/gadoAI.png",
+      video:
         "",
+    },
+    {
+      title: "React E-commerce",
+      href: "https://e-commerce-react-1.vercel.app/",
+      dates: "Oct 2024 - Nov 2024",
+      active: true,
+      description:
+        "E-commerce Platform (In Development)A modern online shopping platform currently under development, featuring product catalog, cart management system, and user authentication interface. The project demonstrates full-stack development skills with a focus on responsive design and user experience. Core functionalities are being refined and integrated for production readiness.",
       technologies: [
         "React",
         "Typescript",
@@ -104,6 +136,29 @@ export const DATA = {
         },
       ],
       image: "/ecommerce.png",
+      video:
+        "",
+    },
+    {
+      title: "React To-Do List",
+      href: "https://todo-list-react-02.vercel.app/",
+      dates: "Jun 2024 - Jul 2024",
+      active: true,
+      description:
+        "TodoList Application A task management app built with React featuring full CRUD operations. Users can create, read, update, and delete tasks with a clean and intuitive interface.",
+      technologies: [
+        "React",
+        "Typescript",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://todo-list-react-02.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/todo.png",
       video:
         "",
     },
