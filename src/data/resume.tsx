@@ -6,7 +6,7 @@ export const DATA = {
   initials: "SCF",
   url: "https://dillion.io",
   location: "Braga, Portugal",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  locationLink: "https://www.google.com/maps/place/braga",
   description:
     "Full-Stack Developer | AI & Automation Solutions | FastAPI, React, LLMs, LangChain, Azure OCR",
   summary:
@@ -18,7 +18,7 @@ export const DATA = {
     "Typescript",
     "TailwindCSS",
     "Python (FastAPI)",
-    ".NET",
+    "C# .NET",
     "PostgresSQL",
     "SQL Server",
     "Docker",
@@ -90,24 +90,25 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Gado AI",
-      href: "https://github.com/Sidney-Filho/GadoAI",
-      dates: "Fev 2025 - Mar 2025",
+      title: "OpsAI - AI Powered Business Operations Assistant",
+      href: "https://github.com/Sidney-Filho/OpsAI",
+      dates: "Jan 2025 - Fev 2025",
       active: true,
       description:
-        "GadoAI - AI-Powered Cattle Data Query System Intelligent chatbot that processes vectorized cattle insemination Excel data and answers questions through natural language. Built with FastAPI and LangChain, data-grounded responses about breeding records and herd analytics.",
+        "Intelligent AI chatbot that analyzes operational and KPI data from a PostgreSQL/Supabase database and answers business questions using natural language. Built with FastAPI and LangChain, delivering accurate, data-grounded insights on costs, performance, and operational status.",
       technologies: [
-        "Next.js",
+        "React.js",
         "Typescript",
         "TailwindCSS",
         "Python (FastAPI)",
         "LangChain",
+        "LLM",
         "Vector Embeddings",
       ],
       links: [
         {
           type: "Repository",
-          href: "https://github.com/Sidney-Filho/GadoAI",
+          href: "https://github.com/Sidney-Filho/OpsAI",
           icon: <Icons.github className="size-3" />,
         },
       ],
