@@ -90,6 +90,37 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Lume AI",
+      href: "https://lume-ai-nu.vercel.app/",
+      dates: "Jan 2026",
+      active: true,
+      description:
+        "Intelligent AI summarization platform that transforms extensive content into structured, actionable insights using Google Gemini. Built with Next.js 16 and Supabase (SSR/Auth), delivering a secure, high-performance experience with real-time AI processing and server-side session management.",
+      technologies: [
+        "Next.js 16",
+        "Google Gemini",
+        "Supabase (SSR/Auth)",
+        "Typescript",
+        "TailwindCSS",
+        "PostgreSQL",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://lume-ai-nu.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Repository",
+          href: "https://github.com/Sidney-Filho/Lume-AI",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "/lume-ai.png",
+      video:
+        "",
+    },
+    {
       title: "OpsAI - AI Powered Business Operations Assistant",
       href: "https://github.com/Sidney-Filho/OpsAI",
       dates: "Jan 2025 - Fev 2025",
